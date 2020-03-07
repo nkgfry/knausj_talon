@@ -1,36 +1,33 @@
-app: /.*terminal/
-app: Cmd.exe
--
-git add: insert("git add ")
-git add patch:
+get add: insert("git add ")
+get add patch:
   insert("git add . -p")
   key(enter)
-git checkout: insert("git checkout ")
-git new branch: insert("git checkout -b ")
-git push:
+get checkout: insert("git checkout ")
+get new branch: insert("git checkout -b ")
+get push:
   insert("git push")
   key(enter)
-git push origin: insert("git push origin ")
-git pull:
+get push origin: insert("git push origin ")
+get pull:
   insert("git pull")
   key(enter)
-git pull origin: insert("git pull origin ")
-git commit:
+get pull origin: insert("git pull origin ")
+get commit:
   insert("git commit")
   key(enter)
-git clone clipboard:
+get clone clipboard:
   insert("git clone ")
   edit.paste()
   key(enter)
-git status:
+get status:
   insert("git status")
   key(enter)
-git log:
+get log:
   insert("git log")
   key(enter)
-git stash:
+get stash:
   insert("git stash")
   key(enter)
-git stash pop:
+get stash pop:
   insert("git stash pop")
   key(enter)
