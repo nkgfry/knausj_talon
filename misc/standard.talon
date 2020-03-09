@@ -1,6 +1,8 @@
 dragon words: "<dgnwords>"
 dragon dictation: "<dgndictation>"
-slap: key(home enter)
+slap: key(enter)
+crack: key(home enter)
+cape: key(escape)
 cd: "cd "
 #cd talon home: "cd {}\n".format(TALON_HOME),
 #cd talon user: "cd {}\n".format(TALON_USER),
