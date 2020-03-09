@@ -107,3 +107,8 @@ wipe: key(backspace)
 	key(left)
 funny: "ha ha"
 #menu: key(alt)
+
+# snippets
+corn: key(alt-shift-f3)
+peace: key(escape o)
+put: key(end left)
