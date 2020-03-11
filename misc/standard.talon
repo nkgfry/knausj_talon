@@ -1,8 +1,5 @@
 dragon words: "<dgnwords>"
 dragon dictation: "<dgndictation>"
-slap: key(enter)
-crack: key(home enter)
-cape: key(escape)
 cd: "cd "
 #cd talon home: "cd {}\n".format(TALON_HOME),
 #cd talon user: "cd {}\n".format(TALON_USER),
@@ -60,6 +57,8 @@ word iter: "iter"
 word no: "NULL"
 word cmd: "cmd"
 word dup: "dup"
+word enter: "enter"
+word escape: "escape"
 word streak: 
 	insert("streq()") 
 	key(left)
@@ -69,6 +68,7 @@ word Point2d: "Point2d"
 word Point3d: "Point3d"
 title Point: "Point"
 word angle: "angle"
+county: "ctrl"
 dunder in it: "__init__"
 self taught: "self."
 (dickt in it | inside bracket | in bracket): 
@@ -109,9 +109,23 @@ funny: "ha ha"
 #menu: key(alt)
 
 # snippets
-corn: key(alt-shift-f3)
+slap: key(enter)
+crack: key(escape i home enter)
 peace: key(escape o)
-put: key(end left)
+cape: key(escape)
+true: "true"
+false: "false"
+who: "undefined"
+code: ": "
+cork: key(alt-shift-f3)
+call: key(shift-9 shift-0)
+pray: key(, space)
+prune: key(, enter)
+oink: key(escape y y)
+drop: key(escape d d)
+more: key(escape c c)
+coin: key(escape y y p)
+put: key(escape i end left)
 swipe: key(ctrl-shift-k)
 shoe: key(escape c i w)
 show: key(escape c i W)
