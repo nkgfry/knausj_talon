@@ -40,14 +40,14 @@ tip size: "size_t"
 tip float: "float "
 tip double: "double "
 args: 
-	insert("()")
-	key(left)
+  insert("()")
+  key(left)
 [inside] (index | array): 
-	insert("[]") 
-	key(left)
+  insert("[]") 
+  key(left)
 block: 
-	insert("{}") 
-	key(left enter enter up tab)
+  insert("{}") 
+  key(left enter enter up tab)
 empty array: "[]"
 comment see: "// "
 word queue: "queue"
@@ -57,13 +57,9 @@ word iter: "iter"
 word no: "NULL"
 word cmd: "cmd"
 word dup: "dup"
-word enter: "enter"
-word escape: "escape"
-word copy: "copy"
-word paste: "paste"
 word streak: 
-	insert("streq()") 
-	key(left)
+  insert("streq()") 
+  key(left)
 word printf: "printf"
 word shell: "shell"
 word Point2d: "Point2d"
@@ -74,16 +70,16 @@ county: "ctrl"
 dunder in it: "__init__"
 self taught: "self."
 (dickt in it | inside bracket | in bracket): 
-	insert("{}") 
-	key(left)
+  insert("{}") 
+  key(left)
 (in | inside) percent: 
-	insert("%%") 
-	key(left)
+  insert("%%") 
+  key(left)
 list in it: 
-	insert("[]") 
-	key(left)
+  insert("[]") 
+  key(left)
 string utf8: 
-	insert("'utf8'")
+  insert("'utf8'")
 state past: "pass"
 
 zoom [in]: edit.zoom_in()
@@ -105,12 +101,75 @@ play previous: key(prev)
 (play | pause): key(play_pause)  
 wipe: key(backspace)
 (pad | padding): 
-	insert("  ") 
-	key(left)
+  insert("  ") 
+  key(left)
 funny: "ha ha"
 #menu: key(alt)
 
-# snippets
+# command corrections
+word enter: "enter"
+word escape: "escape"
+word copy: "copy"
+word paste: "paste"
+word slap: "slap"
+word crack: "crack"
+word peace: "peace"
+word posh: "posh"
+word cape: "cape"
+word who: "who"
+word code: "code"
+word cork: "cork"
+word call: "call"
+word pray: "pray"
+word prune: "prune"
+word oink: "oink"
+word drop: "drop"
+word more: "more"
+word trim: "trim"
+word coin: "coin"
+word flip: "flip"
+word pork: "pork"
+word put: "put"
+word swipe: "swipe"
+word again: "again"
+word upper: "upper"
+word lower: "lower"
+word supper: "supper"
+word blue: "blue"
+word below: "below"
+word blend: "blend"
+word black: "black"
+word blaze: "blaze"
+word bloat: "bloat"
+word pen: "pen"
+word snort: "snort"
+word snoo: "snoo"
+word snow: "snow"
+word snen: "snen"
+word snack: "snack"
+word snace: "snace"
+word snote: "snote"
+word snubble: "snubble"
+word shoe: "shoe"
+word show: "show"
+word grew: "grew"
+word grow: "grow"
+word king: "king"
+
+# text expansions
+my name: "Giang Ngo"
+my street: "2921 Military Ave"
+my address: "2921 Military Ave, Los Angeles, CA 90064"
+my email: "nkgfry@gmail.com"
+my handle: "nkgfry"
+wife's email: "quyngo1510@gmail.com"
+wife's handle: "quyngo1510"
+dad's email: "tungphuong59@gmail.com"
+dad's handle: "tungphuong59"
+mom's email: "halongbalan@yahoo.com"
+mom's handle: "halongbalan"
+
+# general editing
 slap: key(enter)
 crack: key(escape i home enter)
 peace: key(escape o)
@@ -131,9 +190,13 @@ trim: key(escape shift-c)
 coin: key(escape y y p i)
 flip: key(escape y y shift-p i)
 pork: key(escape shift-p i)
+pen: key(escape p i)
 put: key(escape i end left)
 swipe: key(ctrl-shift-k i)
 again: key(escape . .)
+upper: key(g U i)
+lower: key(g u i)
+supper: key(escape g U i w i)
 
 # navigation
 
