@@ -59,6 +59,8 @@ word cmd: "cmd"
 word dup: "dup"
 word enter: "enter"
 word escape: "escape"
+word copy: "copy"
+word paste: "paste"
 word streak: 
 	insert("streq()") 
 	key(left)
@@ -112,6 +114,7 @@ funny: "ha ha"
 slap: key(enter)
 crack: key(escape i home enter)
 peace: key(escape o)
+posh: key(escape O)
 cape: key(escape)
 true: "true"
 false: "false"
@@ -124,9 +127,15 @@ prune: key(, enter)
 oink: key(escape y y)
 drop: key(escape d d)
 more: key(escape c c)
-coin: key(escape y y p)
+trim: key(escape shift-c)
+coin: key(escape y y p i)
+flip: key(escape y y shift-p i)
+pork: key(escape shift-p)
 put: key(escape i end left)
 swipe: key(ctrl-shift-k)
+again: key(escape . .)
+
+# navigation
 
 # paste
 blort: key(" z p)
@@ -156,3 +165,33 @@ shrack: key(escape c i [)
 shrace: key(escape c i {)
 shrote: key(escape c i ')
 shrubble: key(escape c i ")
+
+# delete
+grew: key(escape " z d a w)
+grow: key(escape " z d a W)
+
+# mass copy
+king: key(escape y y)
+jing: key(escape y j)
+twing: key(escape y 2 j)
+thring: key(escape y 3 j)
+fouring: key(escape y 4 j)
+fiving: key(escape y 5 j)
+sixing: key(escape y 6 j)
+sevening: key(escape y 7 j)
+eighting: key(escape y 8 j)
+nining: key(escape y 9 j)
+tenning: key(escape y 1 0 j)
+
+# mass delete
+kish: key(escape d d)
+jish: key(escape d j)
+twoish: key(escape d 2 j)
+threeish: key(escape d 3 j)
+fourish: key(escape d 4 j)
+fiveish: key(escape d 5 j)
+sixish: key(escape d 6 j)
+sevenish: key(escape d 7 j)
+eightish: key(escape d 8 j)
+nineish: key(escape d 9 j)
+tenish: key(escape d 1 0 j)
