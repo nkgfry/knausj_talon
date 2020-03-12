@@ -183,7 +183,6 @@ cork: key(alt-shift-f3)
 call: key(shift-9 shift-0)
 pray: key(, space)
 prune: key(, enter)
-oink: key(escape y y i)
 drop: key(escape d d i)
 more: key(escape c c)
 trim: key(escape shift-c)
@@ -197,6 +196,29 @@ again: key(escape . .)
 upper: key(g U i)
 lower: key(g u i)
 supper: key(escape g U i w i)
+mark: key(escape m x a)
+brush: key(escape ` x a)
+oink:
+  key(escape)
+  insert(":'x,.y")
+  key(enter a)
+scratch:
+  key(escape)
+  insert(":'x,.d")
+  key(enter i)
+sub:
+  key(escape)
+  insert(":'x,.s:::")
+  key(left left)
+sub global:
+  key(escape)
+  insert(":'x,.s:::g")
+  key(left left left)
+# doesn't work
+#backscratch:
+  #key(escape)
+  #insert(":.,'xd")
+  #key(enter)
 
 # navigation
 
