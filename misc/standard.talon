@@ -152,6 +152,7 @@ dad's email: "tungphuong59@gmail.com"
 dad's handle: "tungphuong59"
 mom's email: "halongbalan@yahoo.com"
 mom's handle: "halongbalan"
+parent's handle: "cisowa12"
 
 
 # code expansions
@@ -159,6 +160,8 @@ memo: "// "
 true: "true"
 false: "false"
 who: "undefined"
+docker: "docker"
+else: "else"
 code: ": "
 brack: "["
 are brack: "]"
@@ -173,6 +176,9 @@ array:
   key(left)
 bracing: key({ } left)
 brad: key({ } left space space left)
+mend: 
+  insert(" = ;") 
+  key(left)
 
 
 # general editing
@@ -187,11 +193,9 @@ shove: key(ctrl-])
 tug: key(ctrl-[)
 cleave: key(escape o enter enter up)
 sleeve: key(escape o enter escape P i)
-cork: key(alt-shift-f3)
 pray: key(, space)
 prune: key(, enter)
 drop: key(escape d d i)
-more: key(escape c c)
 trim: key(escape shift-c)
 coin: key(escape y y p i)
 flip: key(escape y y shift-p i)
@@ -251,6 +255,7 @@ snote: key(escape " z y i ' a)
 snubble: key(escape " z y i " a)
 
 # change
+short: key(escape c c)
 shoe: key(escape c i w)
 show: key(escape c i W)
 shren: key(escape c i shift-9)
@@ -288,3 +293,15 @@ sevenish: key(escape d 7 j i)
 eightish: key(escape d 8 j i)
 nineish: key(escape d 9 j i)
 tenish: key(escape d 1 0 j i)
+
+# snippets
+cork: key(alt-shift-f2)
+master: key(shift-f24)
+lettuce: key(alt-shift-f3)
+vernon: key(alt-shift-f4)
+# the extra keypresses are fillers to add, otherwise snippets are inserted too early
+clog it: key(escape o shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 alt-shift-f6)
+clog on: key(escape o shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 alt-shift-f7)
+clog: key(escape o shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 shift-f24 alt-shift-f8)
+try catch: key(alt-shift-f13)
+try catch: key(alt-shift-f13)
