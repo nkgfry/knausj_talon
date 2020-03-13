@@ -39,18 +39,7 @@ tip you went 8: "uint8_t "
 tip size: "size_t"
 tip float: "float "
 tip double: "double "
-args: 
-  insert("()")
-  key(left)
-[inside] (index | array): 
-  insert("[]") 
-  key(left)
-block: 
-  insert("{}") 
-  key(left enter enter up tab)
-empty array: "[]"
-comment see: "// "
-word queue: "queue"
+wordi queue: "queue"
 word eye: "eye"
 word bson: "bson"
 word iter: "iter"
@@ -69,14 +58,8 @@ word angle: "angle"
 county: "ctrl"
 dunder in it: "__init__"
 self taught: "self."
-(dickt in it | inside bracket | in bracket): 
-  insert("{}") 
-  key(left)
 (in | inside) percent: 
   insert("%%") 
-  key(left)
-list in it: 
-  insert("[]") 
   key(left)
 string utf8: 
   insert("'utf8'")
@@ -103,12 +86,12 @@ wipe: key(backspace)
 (pad | padding): 
   insert("  ") 
   key(left)
-funny: "ha ha"
-#menu: key(alt)
+
 
 # command corrections
 word enter: "enter"
 word escape: "escape"
+word space: "space"
 word copy: "copy"
 word paste: "paste"
 word slap: "slap"
@@ -156,6 +139,7 @@ word grew: "grew"
 word grow: "grow"
 word king: "king"
 
+
 # text expansions
 my name: "Giang Ngo"
 my street: "2921 Military Ave"
@@ -169,18 +153,41 @@ dad's handle: "tungphuong59"
 mom's email: "halongbalan@yahoo.com"
 mom's handle: "halongbalan"
 
-# general editing
-slap: key(enter)
-crack: key(escape i home enter)
-peace: key(escape o)
-posh: key(escape O)
-cape: key(escape)
+
+# code expansions
+memo: "// "
 true: "true"
 false: "false"
 who: "undefined"
 code: ": "
+brack: "["
+are brack: "]"
+call: "()"
+squall: "[]"
+brawl: key({ })
+args: 
+  insert("()")
+  key(left)
+array: 
+  insert("[]") 
+  key(left)
+bracing: key({ } left)
+brad: key({ } left space space left)
+
+
+# general editing
+slap: key(enter)
+crack: key(escape i home enter)
+peace: key(escape o)
+peacer: key(escape o enter)
+posh: key(escape O)
+cape: key(escape)
+comment: key(ctrl-/)
+shove: key(ctrl-])
+tug: key(ctrl-[)
+cleave: key(escape o enter enter up)
+sleeve: key(escape o enter escape P i)
 cork: key(alt-shift-f3)
-call: key(shift-9 shift-0)
 pray: key(, space)
 prune: key(, enter)
 drop: key(escape d d i)
@@ -191,7 +198,7 @@ flip: key(escape y y shift-p i)
 pork: key(escape shift-p i)
 pen: key(escape p i)
 put: key(escape i end left)
-swipe: key(ctrl-shift-k i)
+swipe: key(ctrl-shift-k)
 again: key(escape . .)
 upper: key(g U i)
 lower: key(g u i)
@@ -222,8 +229,9 @@ sub global:
 
 # navigation
 
+
 # paste
-blort: key(" z p a)
+blort: key(escape " z p a)
 blue: key(escape v i w " z p a)
 below: key(escape v i W " z p a)
 blend: key(escape v i shift-9 " z p a)
@@ -233,7 +241,7 @@ bloat: key(escape v i ' " z p a)
 blubble: key(escape v i " " z p a)
 
 # copy
-snort: key(" z y a)
+snort: key(escape " z y a)
 snoo: key(escape " z y i w a)
 snow: key(escape " z y i W a)
 snen: key(escape " z y i shift-9 a)
